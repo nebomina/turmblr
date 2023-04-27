@@ -1,0 +1,10 @@
+            {block:IfShowPeopleIFollowWidget}{block:Following}
+                <h3>People I follow</h3>
+                <div id="following_container" class="widget">
+                    <ul>
+                        {block:Followed}
+                            <li><a href="{FollowedURL}"><img src="{FollowedPortraitURL-64}" width="30" height="30" alt="{FollowedName}"/></a></li>
+                        {/block:Followed}
+                    </ul>
+                </div>
+            {/block:Following}{/block:IfShowPeopleIFollowWidget}
